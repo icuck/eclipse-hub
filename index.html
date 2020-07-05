@@ -1,0 +1,244 @@
+<!doctype html>
+
+<script>
+var header1 = 'Eclipse Hub [BETA]';
+var p1 = 'Eclipse Hub is a custom hub made by Lennard, it currently supports: <br> PrisonLife, Jailbreak, Sword Simulator';
+var EclipseImage = ''
+
+</script>
+
+
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<!--navbar css -->
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+ 		<!-- flickity css -->
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css">
+
+
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand yellow" href="#">Eclipse Hub</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+	        			<a class="nav-link white" href="#">Home <span class="sr-only">(current)</span></a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link white" href="#">About</a>
+	     			 </li>
+	    		</ul>
+			</div>
+		</nav>
+	</head>
+
+
+
+	<h1 class='centertext yellow' id='header1'>TITLE</h1>
+	<div class='roundborders centerbox' style='width: 50%; height: 450px;'>
+		<p class='centertext orange' id='paragraph1'>Paragraph example</p>
+	</div>
+
+
+	<br><br>
+	<h2 class='centertext yellow' >Games</h2>
+	<br>
+	<div class="carousel" data-flickity='{"freeScroll": false, "wrapAround": false, "fullscreen": true}'>
+		<img src="imageassets/SwordSimThumbnail.jpeg" class='sizing carousel-cell'>
+		<img src="imageassets/Jailbreak.jpeg" class='sizing carousel-cell'>
+		<img src="imageassets/PrisonLife.jpeg" class='sizing carousel-cell'>
+	</div>
+	<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+</html>
+
+
+
+<style>
+body {
+	background-color: #2E2E2E;
+}
+
+h1 {
+	font-size: 50px
+}
+
+h2 {
+	font-size: 30px
+}
+
+p {
+	font-size: 20px
+}
+
+
+.centertext {
+	text-align: center;
+}
+
+.centerall {
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+}
+
+.roundborders {
+	border: 2px solid gray;
+	border-radius: 5px;
+}
+
+.centerbox {
+	margin: auto;
+}
+
+</style>
+
+
+
+<style>
+.white {
+	color: white;
+}
+
+.red {
+	color: red;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.green {
+	color: green;
+}
+
+.orange {
+	color: orange;
+}
+
+</style>
+
+
+
+
+<!-- Carousel CSS -->
+<style>
+
+.carousel body {
+    padding-top: 30px;
+}
+
+.carousel {
+  width: 75%;
+  margin: auto;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+}
+
+.sizing {
+    height: 250px;
+    width: 375px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.sizing {
+    transition: all .5s ease-in-out;
+}
+
+.sizing:hover {
+    transform: scale(1.05);
+}
+
+
+.carousel-cell {
+    transition: all .5s ease-in-out;
+}
+
+.carousel-cell.is-selected {
+   transform: scale(1.15);
+}
+
+
+
+
+.center {
+    text-align: center;
+}
+
+
+
+
+</style>
+
+
+<!--replaces items -->
+<script>
+document.getElementById('header1').innerHTML = header1;
+document.getElementById('paragraph1').innerHTML = p1;
+</script>
+
+
+
+<!-- Flickity JS -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+
+
+
+<!--navbar js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
